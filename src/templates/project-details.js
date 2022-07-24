@@ -1,7 +1,6 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
-import * as styles from "../styles/project-details.module.css";
 import { graphql } from "gatsby";
 
 const ProjectDetails = ({ data }) => {
@@ -10,15 +9,13 @@ const ProjectDetails = ({ data }) => {
 
   return (
     <Layout>
-      <div className={styles.details}>
+      <div>
         <h2>{title}</h2>
         <h3>{stack}</h3>
-        <div className={styles.featured}>
+        <div>
           <GatsbyImage image={featuredImg.childImageSharp.gatsbyImageData} />
         </div>
-        <div
-          className={styles.html}
-          dangerouslySetInnerHTML={{ __html: html }}
+        <div dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
     </Layout>

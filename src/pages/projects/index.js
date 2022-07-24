@@ -2,7 +2,6 @@ import { graphql, Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../../components/Layout";
-import * as styles from "../../styles/projects.module.css";
 
 const Projects = ({ data }) => {
   console.log(data);
@@ -11,10 +10,10 @@ const Projects = ({ data }) => {
 
   return (
     <Layout>
-      <div className={styles.portfolio}>
+      <div>
         <h2>Portfolio</h2>
         <h3>Projects & Websites I've Created</h3>
-        <div className={styles.projects}>
+        <div>
           {projects.map((project) => (
             <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
               <div>

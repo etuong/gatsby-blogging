@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import "../styles/global.css";
+import "../styles/bootstrap.min.css";
 import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
