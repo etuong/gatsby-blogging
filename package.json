@@ -1,0 +1,23 @@
+{
+  "name": "gatsby-blogging",
+  "private": true,
+  "description": "A blogging site created with Gatsby",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.19.2",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-sharp": "^4.19.0",
+    "gatsby-source-filesystem": "^4.19.0",
+    "gatsby-transformer-remark": "^5.19.0",
+    "gatsby-transformer-sharp": "^4.19.0",
+    "postcss": "^8.4.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
