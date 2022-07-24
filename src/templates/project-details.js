@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import * as styles from "../styles/project-details.module.css";
 import { graphql } from "gatsby";
@@ -14,7 +14,7 @@ const ProjectDetails = ({ data }) => {
         <h2>{title}</h2>
         <h3>{stack}</h3>
         <div className={styles.featured}>
-          <Img fluid={featuredImg.childImageSharp.fluid} />
+          <GatsbyImage image={featuredImg.childImageSharp.gatsbyImageData} />
         </div>
         <div
           className={styles.html}
@@ -36,9 +36,7 @@ export const query = graphql`
         title
         featuredImg {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
       }

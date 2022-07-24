@@ -2,7 +2,7 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import * as styles from "../styles/home.module.css";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function Home({ data }) {
   console.log(data);
@@ -18,7 +18,7 @@ export default function Home({ data }) {
             My Portfolio Projects
           </Link>
         </div>
-        <Img fluid={data.file.childImageSharp.fluid} />
+        <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
       </section>
     </Layout>
   );
@@ -28,9 +28,7 @@ export const query = graphql`
   query Banner {
     file(relativePath: { eq: "banner.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }
