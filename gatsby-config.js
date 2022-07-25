@@ -6,6 +6,8 @@
 
 module.exports = {
   plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
     `gatsby-transformer-remark`,
     "gatsby-transformer-sharp",
     "gatsby-plugin-image",
@@ -26,9 +28,9 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: "Web Warrior",
-    description: "web dev portfolio",
-    copyright: "This website is copyright 2021 Web Warrior",
-    contact: "me@thewebwarrioruk.co.uk",
+    title: "Ethan's Blogs",
+    description:
+      "A website containing my writing on various projects and travels",
+    copyright: "© 2022 Ethan Uong. All Rights Reserved",
   },
 };

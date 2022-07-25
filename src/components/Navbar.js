@@ -1,23 +1,17 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
-import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
+import React from "react";
 
 export default function Navbar() {
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: {eq: "logo.png"}) {
+      file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 30)
         }
       }
-      site {
-        siteMetadata {
-          title
-        }
-      }
     }
   `);
-  const { title } = data.site.siteMetadata;
 
   return (
     <React.Fragment>
@@ -36,8 +30,7 @@ export default function Navbar() {
 
         <div className="container">
           <Link to="/" className="nav-brand">
-            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
-            {/* <img src="assets/img/logo.png" alt="logo"> */}
+            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt=""/>
           </Link>
 
           <div className="collapse navbar-collapse" id="navbarsExampleDefault">

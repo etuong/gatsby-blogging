@@ -4,6 +4,17 @@ Copyright:WowThemes.net,https://www.wowthemes.net
 Version:1.0.1
 License: https://www.wowthemes.net/freebies-license/
 */
+
+html,
+body,
+#___gatsby {
+  height: 100%;
+}
+
+div#gatsby-focus-wrapper {
+  height: 100%;
+}
+
 body {
   padding-top: 5rem;
 }
@@ -22,8 +33,8 @@ a:hover {
 }
 
 .mediumnavigation {
-  background: rgba(255, 255, 255, .97);
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
 }
 
 section {
@@ -31,7 +42,7 @@ section {
 }
 
 .section-title h2 {
-  border-bottom: 1px solid rgba(0, 0, 0, .15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.44);
   margin-bottom: 25px;
   font-weight: 700;
   font-size: 1.4rem;
@@ -39,13 +50,12 @@ section {
 }
 
 .section-title span {
-  border-bottom: 1px solid rgba(0, 0, 0, .44);
   display: inline-block;
   padding-bottom: 20px;
   margin-bottom: -1px;
 }
 
-@media (min-width:576px) {
+@media (min-width: 576px) {
   .card-columns.listfeaturedtag {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -53,10 +63,10 @@ section {
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .navbar-toggleable-md .navbar-nav .nav-link {
-    padding-right: .7rem;
-    padding-left: .7rem;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
   }
 }
 
@@ -70,20 +80,15 @@ section {
 }
 
 .listfeaturedtag .card {
-  border: 1px solid rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   height: 260px;
   padding-left: 0;
   margin-bottom: 15px;
 }
 
-.listfeaturedtag .thumbnail {
-  background-size: cover;
+.listfeaturedtag .gatsby-image-wrapper {
   height: 100%;
-  display: block;
-  background-position: 38% 22% !important;
-  background-origin: border-box !important;
-  border-top-left-radius: 2px;
 }
 
 .listfeaturedtag .card-block {
@@ -99,18 +104,18 @@ section {
 
 .listfeaturedtag h2.card-title a,
 .listrecent h2.card-title a {
-  color: rgba(0, 0, 0, .8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .listfeaturedtag h2.card-title a:hover,
 .listrecent h2.card-title a:hover {
-  color: rgba(0, 0, 0, .6);
+  color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
 }
 
 .listfeaturedtag h4.card-text,
 .listrecent h4.card-text {
-  color: rgba(0, 0, 0, .44);
+  color: rgba(0, 0, 0, 0.44);
   font-size: 0.95rem;
   line-height: 1.4;
   font-weight: 400;
@@ -152,7 +157,7 @@ section {
 
 .post-top-meta span {
   font-size: 0.9rem;
-  color: rgba(0, 0, 0, .44);
+  color: rgba(0, 0, 0, 0.44);
   display: inline-block;
 }
 
@@ -177,7 +182,7 @@ span.author-meta {
 
 span.post-date,
 span.post-read {
-  color: rgba(0, 0, 0, .44);
+  color: rgba(0, 0, 0, 0.44);
 }
 
 span.post-read-more {
@@ -188,18 +193,12 @@ span.post-read-more {
 }
 
 span.post-read-more a {
-  color: rgba(0, 0, 0, .44);
+  color: rgba(0, 0, 0, 0.44);
 }
 
 span.post-name a,
 span.post-read-more a:hover {
-  color: rgba(0, 0, 0, .8);
-}
-
-.dot:after {
-  content: "·";
-  margin-left: 3px;
-  margin-right: 3px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .mediumnavigation .form-control {
@@ -232,7 +231,7 @@ span.post-read-more a:hover {
 
 .mediumnavigation .dropdown-menu {
   border: 1px solid rgba(0, 0, 0, 0.08);
-  margin: .5rem 0 0;
+  margin: 0.5rem 0 0;
 }
 
 .mediumnavigation .nav-item,
@@ -262,30 +261,37 @@ span.post-read-more a:hover {
 }
 
 .footer {
-  border-top: 1px solid rgba(0, 0, 0, .05) !important;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
   padding-top: 15px;
   padding-bottom: 12px;
   font-size: 0.8rem;
-  color: rgba(0, 0, 0, .44);
-  margin-top: 50px;
+  color: rgba(0, 0, 0, 0.44);
+  // margin-top: 50px;
+  .pull-right {
+    float: right;
+  }
+  p {
+    padding-bottom: 15px;
+  }
 }
 
 .link-dark {
-  color: rgba(0, 0, 0, .8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .article-post {
   font-family: Merriweather;
   font-size: 1.2rem;
   line-height: 1.8;
-  color: rgba(0, 0, 0, .8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 blockquote {
   border-left: 4px solid #00ab6b;
   padding: 0 20px;
   font-style: italic;
-  color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .article-post p,
@@ -327,7 +333,7 @@ blockquote {
   vertical-align: middle;
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .share {
     position: fixed;
     display: block;
@@ -338,8 +344,7 @@ blockquote {
   }
 }
 
-@media (max-width:999px) {
-
+@media (max-width: 999px) {
   .listfeaturedtag .wrapthumbnail,
   .listfeaturedtag .col-md-7 {
     width: 100%;
@@ -368,13 +373,13 @@ blockquote {
   }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
   .post-top-meta .col-md-10 {
     text-align: center;
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .post-top-meta.authorpage {
     text-align: center;
   }
@@ -382,8 +387,8 @@ blockquote {
 
 .share,
 .share a {
-  color: rgba(0, 0, 0, .44);
-  fill: rgba(0, 0, 0, .44);
+  color: rgba(0, 0, 0, 0.44);
+  fill: rgba(0, 0, 0, 0.44);
 }
 
 .graybg {
@@ -393,7 +398,7 @@ blockquote {
 }
 
 .listrelated .card {
-  box-shadow: 0 1px 7px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.05);
   border: 0;
 }
 
@@ -415,17 +420,18 @@ ul.tags {
 ul.tags li {
   display: inline-block;
   font-size: 0.9rem;
-}
-
-ul.tags li a {
-  background: rgba(0, 0, 0, .05);
-  color: rgba(0, 0, 0, .6);
-  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
   padding: 5px 10px;
 }
 
+ul.tags li:not(:first-child) {
+  margin: 3px;
+}
+
 ul.tags li a:hover {
-  background: rgba(0, 0, 0, .07);
+  background: rgba(0, 0, 0, 0.07);
   text-decoration: none;
 }
 
@@ -442,8 +448,8 @@ ul.tags li a:hover {
 }
 
 .btn.follow {
-  border-color: #02B875;
-  color: #1C9963;
+  border-color: #02b875;
+  color: #1c9963;
   padding: 3px 10px;
   text-align: center;
   border-radius: 999em;
@@ -452,8 +458,8 @@ ul.tags li a:hover {
 }
 
 .btn.subscribe {
-  background-color: #1C9963;
-  border-color: #1C9963;
+  background-color: #1c9963;
+  border-color: #1c9963;
   color: rgba(255, 255, 255, 1);
   fill: rgba(255, 255, 255, 1);
   border-radius: 30px;
@@ -469,7 +475,7 @@ ul.tags li a:hover {
 }
 
 .alertbar {
-  box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .0785);
+  box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, 0.0785);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -480,23 +486,23 @@ ul.tags li a:hover {
 }
 
 .form-control::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .form-control:-moz-placeholder {
-  color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .form-control::-moz-placeholder {
-  color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .form-control:-ms-input-placeholder {
-  color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .form-control::-ms-input-placeholder {
-  color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .authorpage h1 {
@@ -510,7 +516,7 @@ ul.tags li a:hover {
 
 .authorpage .author-description {
   font-size: 1rem;
-  color: rgba(0, 0, 0, .6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .post-top-meta.authorpage .btn.follow {
@@ -549,4 +555,106 @@ ul.tags li a:hover {
   line-height: 22px;
   border-radius: 50%;
   font-size: 12px;
+}
+
+.fof {
+  height: 600px;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: black;
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+
+.buttons-con .action-link-wrap a {
+  background: #68c950;
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.buttons-con .action-link-wrap a:hover {
+  background: #5a5c6c;
+  color: #fff;
+}
+
+#Polygon-1,
+#Polygon-2,
+#Polygon-3,
+#Polygon-4,
+#Polygon-4,
+#Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+
+#Polygon-2 {
+  animation-delay: 0.2s;
+}
+
+#Polygon-3 {
+  animation-delay: 0.4s;
+}
+
+#Polygon-4 {
+  animation-delay: 0.6s;
+}
+
+#Polygon-5 {
+  animation-delay: 0.8s;
+}
+
+@keyframes float {
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@media (max-width: 450px) {
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -190px;
+  }
+
+  .message-box {
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+    text-align: center;
+  }
 }

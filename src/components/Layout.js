@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import "../styles/global.css";
+import "../styles/global.scss";
 import "../styles/bootstrap.min.css";
 import Navbar from "./Navbar";
 
@@ -17,12 +17,12 @@ export default function Layout({ children }) {
   const { copyright } = data.site.siteMetadata;
 
   return (
-    <div className="layout">
+    <div className="container">
       <Navbar />
-      <div className="content">{children}</div>
-      <footer>
-        <p>{copyright}</p>
-      </footer>
+      {children}
+      {/* <footer className="footer">
+        <p className="pull-right">{copyright}</p>
+      </footer> */}
     </div>
   );
 }
