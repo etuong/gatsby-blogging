@@ -23,7 +23,7 @@ export default function Home({ data }) {
         <section className="featured-posts">
           <div className="section-title">
             <h2>
-              <span>Featured</span>
+              <span>Projects</span>
             </h2>
           </div>
 
@@ -38,7 +38,7 @@ export default function Home({ data }) {
                     >
                       <GatsbyImage
                         image={
-                          project.frontmatter.thumb.childImageSharp
+                          project.frontmatter.featuredImg.childImageSharp
                             .gatsbyImageData
                         }
                         alt=""
@@ -57,9 +57,7 @@ export default function Home({ data }) {
                         </Link>
                       </h2>
                       <h4 className="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
+                        {project.frontmatter.description.substring(0, 200)}
                       </h4>
                       <div className="metafooter">
                         <div className="wrapfooter">
@@ -89,13 +87,11 @@ export default function Home({ data }) {
           <div className="card-columns listrecent">
             {travels.map((travel) => (
               <div className="card" key={travel.id}>
-                <Link
-                  to={"/blogs/" + travel.frontmatter.slug}
-                  key={travel.id}
-                >
+                <Link to={"/blogs/" + travel.frontmatter.slug} key={travel.id}>
                   <GatsbyImage
                     image={
-                      travel.frontmatter.thumb.childImageSharp.gatsbyImageData
+                      travel.frontmatter.featuredImg.childImageSharp
+                        .gatsbyImageData
                     }
                     alt=""
                   />
@@ -110,9 +106,7 @@ export default function Home({ data }) {
                     </Link>
                   </h2>
                   <h4 className="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                    {travel.frontmatter.description.substring(0, 200)}...
                   </h4>
                   <div className="metafooter">
                     <div className="wrapfooter">
@@ -145,7 +139,8 @@ export const query = graphql`
           slug
           stack
           title
-          thumb {
+          description
+          featuredImg {
             childImageSharp {
               gatsbyImageData(layout: CONSTRAINED)
             }
@@ -163,7 +158,8 @@ export const query = graphql`
           slug
           stack
           title
-          thumb {
+          description
+          featuredImg {
             childImageSharp {
               gatsbyImageData(layout: CONSTRAINED)
             }

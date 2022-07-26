@@ -1,7 +1,8 @@
 import { graphql, useStaticQuery } from "gatsby";
+import "katex/dist/katex.min.css";
 import React from "react";
-import "../styles/global.scss";
 import "../styles/bootstrap.min.css";
+import "../styles/global.scss";
 import Navbar from "./Navbar";
 
 export default function Layout({ children, fullHeight }) {

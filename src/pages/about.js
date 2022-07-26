@@ -1,41 +1,60 @@
 import React from "react";
 import Layout from "../components/Layout";
+import image from "../images/about.jpg";
 
 const About = () => {
   return (
-    <Layout fullHeight={true}>
+    <Layout>
       <div className="mainheading">
         <h1 className="sitetitle">About Ethan</h1>
-        <p className="lead">Get to know a little bit about me</p>
+        <p className="lead">
+          Get to know a little bit about the man behind this site
+        </p>
       </div>
 
+      <img src={image} className="featured-image img-fluid" />
+
+      <h4>📜 Education </h4>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
-        ipsum corrupti nostrum iure ipsam, unde eveniet temporibus eaque
-        distinctio porro, accusamus, cum officia! Numquam, quam dolores
-        praesentium quae sapiente tenetur minima officia reprehenderit
-        cupiditate minus ad animi, sit, cumque omnis earum totam sint maxime?
-        Eveniet voluptatum officiis minus, debitis consectetur voluptas numquam
-        animi magni sequi corporis ipsum odio voluptatibus nulla tempora, sunt
-        aliquid? Ea qui recusandae eius nostrum dolorum saepe laboriosam dolorem
-        molestiae, blanditiis expedita odit obcaecati, amet dent, voluptates
-        eius soluta accusamus ipsum harum id architecto sapiente, nemo ad rerum
-        expedita? Quasi dolore dolores id omnis a.
+        Ethan Thomas Uong is an Asian American engineer and residing in Los
+        Angeles, CA. Uong graduated from the University of California, San Diego
+        with a degree in Structural Engineering (emphasis on geotechnical design
+        and computational analysis) and Carnegie Mellon in M.S Computational
+        Mechanics. He is the recipient of the American Society of Civil
+        Engineers award and scholar of the Leo Politi Foundation. Uong is
+        perhaps best known for his natural curiosity, willingness and dedication
+        for learning, and pragmatic approach on solving problems.
       </p>
+
+      <h4>👨‍💻 Career </h4>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
-        ipsum corrupti nostrum iure ipsam, unde eveniet temporibus eaque
-        distinctio porro, accusamus, cum officia! Numquam, quam dolores
-        praesentium quae sapiente tenetur minima officia reprehenderit voluptate
-        reiciendis amet aperiam ratione vero? A expedita, recusandae laboriosam
-        deserunt aperiam nostrum, temporibus corrupti hic vero atque numquam
-        nobis sed, magnam id ipsa quis animi quos pariatur alias quae! Accusamus
-        labore non incidunt quasi debitis perspiciatis fugiat, excepturi
-        exercitationem perferendis quas similique culpa impedit natus facilis
-        hic dicta dolorum qui quis molestiae? Aperiam non delectus reprehenderit
-        modi ipsa, necessitatibus fugit consequuntur maiores neque nihil velit
-        provident, voluptates eius soluta accusamus ipsum harum id architecto
-        sapiente, nemo ad rerum expedita? Quasi dolore dolores id omnis a.
+        At a young age, Uong had a candid characteristic to break things apart
+        and put them back together and this attitude brought out this true
+        passion in Computational Mechanics where he is able to wander endlessly
+        in the world of mathematics and science. He later discovered his true
+        passion in computer science and is now pursuing it full time. This site
+        contains a collection of his numerous projects that he is excited to
+        share with you!
+      </p>
+
+      <h4>✈️ + ❤️ Cultural Diversity</h4>
+      <p>
+        With a great sense for cultural awareness, Uong has visited over 30
+        countries. With no hesitation and fear, he stepped onto new territories
+        and allowed his experiences to diversify his view of the world. Uong
+        continues to believe that a worldly experience can lead to success and
+        acceptance. For Uong, knowledge is power and with power, comes the
+        ability to positively influence people's lives. Each time he traveld
+        abroad, he obtained a vast knowledge of their culture and gained a
+        better appreciation of his own.
+      </p>
+
+      <h4>🔭 Future </h4>
+      <p>
+        In his spare time, Uong likes to play his Rodriguez flamenco guitar,
+        pick up a computer language, or go for a jog. His next big move in life
+        is to earn an MBA to advance his career and save money to travel to the
+        Mediterranean! :)
       </p>
     </Layout>
   );

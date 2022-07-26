@@ -9,30 +9,28 @@ const ProjectDetails = ({ data }) => {
 
   return (
     <Layout>
-      <div>
-        <div className="row">
-          <div className="col-md-12 col-xs-12">
-            <div className="mainheading">
-              <h1 className="posttitle">{title}</h1>
-            </div>
+      <div className="row">
+        <div className="col-md-12 col-xs-12">
+          <div className="mainheading">
+            <h1 className="posttitle">{title}</h1>
+          </div>
 
-            <GatsbyImage
-              className="featured-image img-fluid"
-              image={featuredImg.childImageSharp.gatsbyImageData}
-              alt=""
-            />
+          <GatsbyImage
+            className="featured-image img-fluid"
+            image={featuredImg.childImageSharp.gatsbyImageData}
+            alt=""
+          />
 
-            <div className="article-post">
-              <div dangerouslySetInnerHTML={{ __html: html }} />
-            </div>
+          <div className="article-post">
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+          </div>
 
-            <div className="after-post-tags">
-              <ul className="tags">
-                {stack.split(", ").map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-            </div>
+          <div className="after-post-tags">
+            <ul className="tags">
+              {stack && stack.split(", ").map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
