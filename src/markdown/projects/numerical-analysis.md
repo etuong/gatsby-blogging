@@ -1,7 +1,7 @@
 ---
 title: Numerical Analysis
 stack: MATLAB, Numerical Analysis, Computational Mechanics, Computational Fluid Dynamics, Linear Algebra
-description: numerical-analysis
+description: Numerical analysis is the study of algorithms that use numerical approximation for the problems of mathematical analysis. It is the study of numerical methods that attempt at finding approximate solutions of problems rather than the exact ones.
 slug: numerical-analysis
 date: 2015-02-01T00:00:00+00:00
 featuredImg: ../../images/numerical-analysis.jpg
