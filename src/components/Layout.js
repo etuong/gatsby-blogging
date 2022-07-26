@@ -4,7 +4,7 @@ import "../styles/global.scss";
 import "../styles/bootstrap.min.css";
 import Navbar from "./Navbar";
 
-export default function Layout({ children }) {
+export default function Layout({ children, fullHeight }) {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -17,12 +17,12 @@ export default function Layout({ children }) {
   const { copyright } = data.site.siteMetadata;
 
   return (
-    <div className="container">
+    <div className={`container ${fullHeight ? "layout" : ""}`}>
       <Navbar />
-      {children}
-      {/* <footer className="footer">
+      <main>{children}</main>
+      <footer className="footer">
         <p className="pull-right">{copyright}</p>
-      </footer> */}
+      </footer>
     </div>
   );
 }

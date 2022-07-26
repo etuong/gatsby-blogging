@@ -7,16 +7,19 @@ License: https://www.wowthemes.net/freebies-license/
 
 html,
 body,
-#___gatsby {
-  height: 100%;
-}
-
+.layout,
+#___gatsby,
 div#gatsby-focus-wrapper {
   height: 100%;
 }
 
 body {
   padding-top: 5rem;
+  position: relative;
+}
+
+.container {
+  padding-bottom: 20px;
 }
 
 .mainheading {
@@ -261,18 +264,16 @@ span.post-read-more a:hover {
 }
 
 .footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
   padding-top: 15px;
-  padding-bottom: 12px;
   font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.44);
   // margin-top: 50px;
   .pull-right {
     float: right;
-  }
-  p {
-    padding-bottom: 15px;
   }
 }
 
@@ -598,11 +599,9 @@ svg {
   border-radius: 4px;
   color: #fff;
   font-weight: bold;
-  font-size: 14px;
   transition: all 0.3s linear;
   cursor: pointer;
   text-decoration: none;
-  margin-right: 10px;
 }
 
 .buttons-con .action-link-wrap a:hover {

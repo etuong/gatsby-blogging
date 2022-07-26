@@ -28,20 +28,23 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="container">
+        <div className="container" style={{ paddingBottom: 0 }}>
           <Link to="/" className="nav-brand">
-            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt=""/>
+            <GatsbyImage
+              image={data.file.childImageSharp.gatsbyImageData}
+              alt=""
+            />
           </Link>
 
           <div className="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <Link to="/" className="nav-link">
+              <li className="nav-item">
+                <Link to="/" className="nav-link" activeClassName="active">
                   Stories
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="nav-link">
+                <Link to="/about" className="nav-link" activeClassName="active">
                   About
                 </Link>
               </li>

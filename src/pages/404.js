@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 
 const NotFound = () => {
   return (
-    <Layout>
+    <Layout fullHeight={true}>
       <div className="fof">
         <svg
           width="380px"

@@ -3,8 +3,8 @@ title: Real Kitchen Food
 stack: Gatsby, Shopify
 slug: real-kitchen-food
 date: 2021-01-05T00:00:00+00:00
-thumb: ../images/2.jpg
-featuredImg: ../images/2.jpg
+thumb: ../../images/2.jpg
+featuredImg: ../../images/2.jpg
 ---
 
 Holy grail funding non-disclosure agreement advisor ramen bootstrapping ecosystem. Beta crowdfunding iteration assets business plan paradigm shift stealth mass market seed money rockstar niche market marketing buzz market.
