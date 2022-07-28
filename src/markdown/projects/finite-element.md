@@ -2,7 +2,7 @@
 title: Finite Element
 stack: MATLAB, Numerical Analysis, Computational Mechanics, Computational Fluid Dynamics, Linear Algebra
 description: The finite element method is a popular method for numerically solving differential equations arising in engineering and mathematical modeling. Typical problem areas of interest include the traditional fields of structural analysis, heat transfer, fluid flow, mass transport,
-slug: real-kitchen-food
+slug: finite-element
 date: 2021-01-05T00:00:00+00:00
 featuredImg: ../../images/finite-element.jpg
 ---

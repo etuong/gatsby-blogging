@@ -8,7 +8,7 @@ const ProjectDetails = ({ data }) => {
   const { title, stack, featuredImg } = data.markdownRemark.frontmatter;
 
   return (
-    <Layout>
+    <Layout title={title}>
       <div className="row">
         <div className="col-md-12 col-xs-12">
           <div className="mainheading">
@@ -27,9 +27,10 @@ const ProjectDetails = ({ data }) => {
 
           <div className="after-post-tags">
             <ul className="tags">
-              {stack && stack.split(", ").map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
+              {stack &&
+                stack
+                  .split(", ")
+                  .map((item, index) => <li key={index}>{item}</li>)}
             </ul>
           </div>
         </div>

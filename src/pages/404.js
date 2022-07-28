@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 
 const NotFound = () => {
   return (
-    <Layout fullHeight={true}>
+    <Layout fullHeight={true} title="404 Not Found">
       <div className="fof">
         <svg
           width="380px"

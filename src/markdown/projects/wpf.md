@@ -11,7 +11,7 @@ Windows Presentation Foundation (or WPF) is a graphical subsystem by Microsoft f
 
 This project demostrates a few WPF features through a series of examples. The first example is on animation. Here I have two images, one is a normal picture of me and the another one is not so skinny picture of me. These two images are overlapped with each other using the Canvas tag. In WPF, every control can only have one child, thus containers like StackPanel, WrapPanel, and DockPanel are used to lay out the interface, howevever they are "stacked" relative to each other except for the canvas and grid containers. Only Grid and Canvas allow for overlapping. Here we use a trigger with a loaded event to begin an animation that changes the opacity of a target with the name "pic" (which in this case is the not skinny picture) from fully visible to invisible within two seconds. The "RepeatBehavior" is set to forever which means the animation loops infinitely. Furthermore, we have two more routed events for mouse in and out which pauses and resumes the storyboard, respectively.
 
-```
+```csharp
 <Canvas>
     <Canvas.Triggers>
         <EventTrigger RoutedEvent="Canvas.Loaded">
@@ -37,7 +37,7 @@ This project demostrates a few WPF features through a series of examples. The fi
 
 In this demo, we observe some pretty amazing WPF styling. The first style targets the whole Window. It has a trigger that listens to the binding of the property "IsChecked" of the element by the name of "redColorCheckBox." If this value is true, then it sets the background to red. But what background? The background of the specific type, which in this case is the window. The second block of code is inside the Window.Resources which means any styling or defines in this block is applied to the whole window. The first style in here applies to every button, hence in the video clip on the left you see that the three buttons all look the same (height of 30px, height of 80px, font size of 12px, etc). Furthermore, once again we have a trigger and this one is "IsMouseOver", meaning whenever the mouse is over the control (button), the foreground turns red. Styles in WPF do not have to be defined under Resources, it can be defined straight within the scope of the individual control. If you look at the second textbox, you will see that I am manipulating the "Background" and "IsEnabled" properties. The background is binded to whatever value I type in the textbox. This is done through RelativeSource to myself and taking the text property. Similarly, I have a data trigger that compares to my typed text, if it is equal to the string "disabled" then it will set the "IsEnabled" property to false. As you can see, the possibilities of WPF styling is endless. The complete code snippet is below.
 
-```
+```csharp
 <Window.Style>
 	<Style TargetType="{x:Type Window}">
 		<Style.Triggers>
@@ -108,7 +108,7 @@ In this demo, we observe some pretty amazing WPF styling. The first style target
 
 Data binding is what makes WPF so powerful. In this demo, we will see how to properly create a data template. The XAML is pretty straight forward, we have a listbox and a button. This button subscribes to a click event which we will discuss later. The listbox contains an ItemsSource that populates the collection as well as an Item Template. The StaticResource of this property points to a data template that "customizes" the appearance on how to display the data, which in this sense I assign it to have a grid inside a border and in this grid we get and set the name and age of a person. Note that the binding of "Name" and "Age" are actually properties of an instance of the datum (from the item source). As for the population of the items and the model itself, I handled them in the code behind. I have a class called Person that has name and age as attributes and publicly expose them so the data template can retrieve them. In the constructor I have a list of people and assign it to the item source of the listbox. Note that we can also use the .NET ObservableCollection which implements the INotifyCollectionChanged that works well with MVVM. When users change the name and age of each item, the properties automatically get updated because of the binding, and when they click on the button, there's a message box that shows the person's information.
 
-```
+```csharp
 <Window.Resources>
 	<DataTemplate x:Key ="template">
 		<Border x:Name="bord3r" BorderBrush="Red" BorderThickness="1">
@@ -150,7 +150,7 @@ Data binding is what makes WPF so powerful. In this demo, we will see how to pro
 </Grid>
 ```
 
-```
+```csharp
 public partial class DataTemplateExample : Window
 {
     public DataTemplateExample()
@@ -200,7 +200,7 @@ This is an example of a very basic and classic MVVM pattern. The main idea of MV
 
 This example is very simple, we have a listbox, data grid, and combo box that shares the same items source. There is a button that upon invoke will take a textbox string and adds to the collection. The core of MVVM lies in the implementation of the INotifyPropertyChanged interface. This interface allows any messages to be updated back to the View. Any property in the ViewModel that is bound to the View should implement this.
 
-```
+```csharp
 public class ViewModelBase: INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler PropertyChanged;
@@ -218,7 +218,7 @@ public class ViewModelBase: INotifyPropertyChanged
 
 The second main component is the implementation of the ICommand interface. This is to bind commands in the View such as button or any control event.
 
-```
+```csharp
 public class DelegateCommand : ICommand
 {
     private readonly Action _execute;
@@ -258,7 +258,7 @@ public class DelegateCommand : ICommand
 
 The model can be anything, here I choose to create a blueprint of a person that has a first name, last name, and age.
 
-```
+```csharp
 public class Person : INotifyPropertyChanged
 {
     private string _FirstName;
@@ -319,7 +319,7 @@ public class Person : INotifyPropertyChanged
 
 I daresay the ViewModel is the most complex part of the application. Afterall, it handles all the business logic and serves as the mediator between the Model and View. Here, we populate the collection in the constructor and listen to the change in selected person. Because the list box, data grid, and combo box all shared the same ObservableCollection and because we notify the same messages back to the view, all three get updated at the same time.
 
-```
+```csharp
 public class MainWindowViewModel : ViewModelBase
 {
     public DelegateCommand AddUserCommand { get; set; }
@@ -384,7 +384,7 @@ public class MainWindowViewModel : ViewModelBase
 
 And finally we have the View. The last major concept is how exactlyl do we bind everything together? We have established that the View must know nothing about the Model, but how precisely does the View understand the ViewModel? This is done by setting the DataContext of the View to an instance of the ViewModel.
 
-```
+```csharp
 <Grid Margin="20">
     <Grid.RowDefinitions>
         <RowDefinition Height="Auto"/>

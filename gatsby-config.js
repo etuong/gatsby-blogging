@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: `/gatsby-blogging`,
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
@@ -17,15 +18,6 @@ module.exports = {
             resolve: `gatsby-remark-katex`,
             options: {
               strict: `ignore`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 800,
-              linkImagesToOriginal: false,
-              sizeByPixelDensity: true,
-              showCaptions: true,
             },
           },
         ],

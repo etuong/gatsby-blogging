@@ -2,7 +2,6 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { Helmet } from "react-helmet";
 
 export default function Home({ data }) {
   const { title, description } = data.metadata.siteMetadata;
@@ -11,10 +10,7 @@ export default function Home({ data }) {
 
   return (
     <React.Fragment>
-      <Helmet>
-        <title>{title}</title>
-      </Helmet>
-      <Layout>
+      <Layout title={title}>
         <div className="mainheading">
           <h1 className="sitetitle">{title}</h1>
           <p className="lead">{description}</p>

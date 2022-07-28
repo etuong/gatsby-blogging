@@ -4,7 +4,7 @@ import image from "../images/about.jpg";
 
 const About = () => {
   return (
-    <Layout>
+    <Layout title="About Ethan">
       <div className="mainheading">
         <h1 className="sitetitle">About Ethan</h1>
         <p className="lead">
