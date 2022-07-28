@@ -5,6 +5,7 @@ stack:
 slug: macau
 date: 2010-07-01T00:00:00+00:00
 featuredImg: ../../images/macau.jpg
+readTime: 6
 ---
 
 Macau...where do I start? Let's see, Macau was actually not on my itinerary. I had no plans on visiting here but I am glad I did. Macau is by far the prettiest country in terms of architecture, in my opinion. I love the Portuguese influence on these buildings. The streets are narrow and there are actually cobblestone! I wish I had taken more architecture classes to describe better, but I don't really think words will do. You just have to go and experience yourself.

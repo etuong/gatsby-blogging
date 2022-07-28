@@ -5,6 +5,7 @@ stack:
 slug: newzealand
 date: 2010-06-01T00:00:00+00:00
 featuredImg: ../../images/newzealand.jpg
+readTime: 6
 ---
 
 On the night of June 20, 2010 I knew my life wasn't going to be the same for a few months. I knew that something tickled my twinkle and I couldn’t rest. The following day, I embarked on a brand-new journey to find myself lost in a beautiful country, New Zealand, and furthermore a sight-seeing city, Auckland. When I went through customs at the Auckland International Airport, it struck me that I would actually be living here for nine weeks.

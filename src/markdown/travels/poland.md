@@ -5,6 +5,7 @@ stack:
 slug: poland
 date: 2011-11-13T00:00:00+00:00
 featuredImg: ../../images/poland.jpg
+readTime: 7
 ---
 
 Poland was awesome! I spent three days in Gdansk and 5 days in Warsaw and learned about the start of the Second World War and the Warsaw Uprising. Personally, I think if you went to a country in Central Europe, you would have had enough of the European taste. Poland was to me, very similar to Czech Republic because they both speak in the Slavic tongue and you could almost always get the European “feel,” it’s not like flying from China to Brazil where the culture and environment are different. Nevertheless, Poland had a lot to offer, especially its Pierogi and extremely rich history.

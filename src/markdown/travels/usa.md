@@ -5,6 +5,7 @@ stack:
 slug: usa
 date: 2013-06-01T00:00:00+00:00
 featuredImg: ../../images/usa.jpg
+readTime: 10
 ---
 
 Prior to going to grad school, I knew I had to travel once more. The initial itinerary was to the Mediterranean, but considering that I was going to pay over 60K for Carnegie Mellon, I decided to stay in the states and travel to the east coast. My first stop was to New York City and it was mind blowing because there were so many people. I especially loved how the city had so many different people. 10 minutes in the airport and I saw a group of Chinese here and another group of Europeans there and everybody was speaking all sort of languages. I really enjoyed the diversity but the city was just too "fast" for me. People talk fast, people walk fast, people eat fast, and I'm just a mellow guy from SoCal. I remember having constant headaches because my hotel was a block west from Time Square and so every time I went out or home I had to face a horde of fast walking tourists, it was literally like dodging bullets for me!

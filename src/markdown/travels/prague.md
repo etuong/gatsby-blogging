@@ -5,6 +5,7 @@ stack:
 slug: prague
 date: 2011-09-01T00:00:00+00:00
 featuredImg: ../../images/prague.jpg
+readTime: 8
 ---
 
 Prague is an extremely pleasant city. I loved it here. You really get the European feel from the cobblestones and narrow streets. The city itself is relatively safe but there are some corrupted people like taxi drivers. I was stopped by polices once and asked for my passport out of a few dozen people. I guess being Asian stands out, and a dark one is even easier to spot. I stayed in a wonderful hostel with good service and company. The people I dormed with are a group of German tourists and they were awfully friendly. We shared many interesting stories; I told them that Chinese people are superstitious of the number 4 because it sounds like “die” in Chinese and they told me about the midnight sun and polar night. Midnight sun and polar night are a phenomenon that is only affected within the Arctic Circle (i.e Alaska, Canada, Scandinavia). Midnight sun in the summer is when the sun is out for over 20+ hours, that is, the sky is always bright throughout the day (speaking of jetlag). Polar night is the opposite, in winter the sky is dark for whole day, hence magnetic fields bring out light refractions such as the Aurora Borealis. Did you know that Iceland, Finland, and other northern countries have the highest suicide rate in the world? We blamed the polar night for the depression. Imagine having a dark day and night for over 5 months. How sad is that!?

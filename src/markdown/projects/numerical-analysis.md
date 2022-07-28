@@ -5,6 +5,7 @@ description: Numerical analysis is the study of algorithms that use numerical ap
 slug: numerical-analysis
 date: 2015-02-01T00:00:00+00:00
 featuredImg: ../../images/numerical-analysis.jpg
+readTime: 17
 ---
 
 ### Abstract

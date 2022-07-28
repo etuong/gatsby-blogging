@@ -53,17 +53,15 @@ export default function Home({ data }) {
                         </Link>
                       </h2>
                       <h4 className="card-text">
-                        {project.frontmatter.description.substring(0, 200)}
+                        {project.frontmatter.description.substring(0, 200)}...
                       </h4>
-                      <div className="metafooter">
-                        <div className="wrapfooter">
-                          <span className="author-meta">
-                            <span className="post-date">
-                              {project.frontmatter.date}
-                            </span>
-                            <span className="post-read">6 min read</span>
+                      <div className="wrapfooter">
+                        <span className="author-meta">
+                          <span className="post-date"></span>
+                          <span className="post-read">
+                            {project.frontmatter.readTime} min read
                           </span>
-                        </div>
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -104,15 +102,13 @@ export default function Home({ data }) {
                   <h4 className="card-text">
                     {travel.frontmatter.description.substring(0, 200)}...
                   </h4>
-                  <div className="metafooter">
-                    <div className="wrapfooter">
-                      <span className="author-meta">
-                        <span className="post-date">
-                          {travel.frontmatter.date}
-                        </span>
-                        <span className="post-read">6 min read</span>
+                  <div className="wrapfooter">
+                    <span className="author-meta">
+                      <span className="post-date"></span>
+                      <span className="post-read">
+                        {travel.frontmatter.readTime} min read
                       </span>
-                    </div>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -136,6 +132,7 @@ export const query = graphql`
           stack
           title
           description
+          readTime
           featuredImg {
             childImageSharp {
               gatsbyImageData(layout: CONSTRAINED)
@@ -155,6 +152,7 @@ export const query = graphql`
           stack
           title
           description
+          readTime
           featuredImg {
             childImageSharp {
               gatsbyImageData(layout: CONSTRAINED)

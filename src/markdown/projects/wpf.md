@@ -5,6 +5,7 @@ description: WPF employs XAML, an XML-based language, to define and link various
 slug: wpf
 date: 2018-01-03T00:00:00+00:00
 featuredImg: ../../images/wpf.jpg
+readTime: 13
 ---
 
 Windows Presentation Foundation (or WPF) is a graphical subsystem by Microsoft for rendering user interfaces in Windows-based applications. In my coding career I worked with this technology. This page provides a mini project that has a few comprehensive examples of what WPF is capable of. The last topic of this page talks about Model-View-ViewModel (MMVV), which is a software architectural patttern that decouples the user interface with the business logic. This page is not meant to be a tutorial but simply a refresher to those that have experiences with WPF and MVVM.

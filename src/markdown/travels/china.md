@@ -5,6 +5,7 @@ stack:
 slug: china
 date: 2017-09-01T00:00:00+00:00
 featuredImg: ../../images/china.jpg
+readTime: 12
 ---
 
 China was a very interesting experience. I haven't gone abroad in over 6 years before this! Last time I traveled abroad was in 2011 to Germany and it felt like an eternity. China has a very rich history with many areas to explore. It's almost the size of United States and 25 days were simply not enough time to see it all! I ventured to most of the central and western part of the country. This country felt like home to me as the culture and people are very similar to Vietnamese. In fact, I grew up with predominately Chinese folks, yet it stil amazes me how much more I still haven't learned from them.

@@ -5,6 +5,7 @@ description: Computer vision is an interdisciplinary scientific field that deals
 slug: computer-vision
 date: 2021-01-01T00:00:00+00:00
 featuredImg: ../../images/computer-vision.jpg
+readTime: 15
 ---
 
 According to Wikipedia, computer vision is an interdisciplinary field that deals with how computers can be made for gaining high-level understanding from digital images or videos. Computer vision tasks include methods for acquiring, processing, analyzing and understanding digital images, and extraction of high-dimensional data from the real world in order to produce numerical or symbolic information. It involves the development of a theoretical and algorithmic basis to achieve automatic visual understanding. As a scientific discipline, computer vision is concerned with the theory behind artificial systems that extract information from images. The image data can take many forms, such as video sequences, views from multiple cameras. In my graduate studies at Carnegie Mellon University, I took a course in computer vision, which is my favorite course of all time as well as the most difficult! These are projects I completed that will encapsulate the basic idea of this powerful computer science concept. Please note that I cannot provide my source code because these assignments may be reused in the course.

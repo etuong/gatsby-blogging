@@ -5,6 +5,7 @@ description: I was inspired by Amazon that started out as a website selling book
 slug: booksmart
 date: 2021-12-18T00:00:00+00:00
 featuredImg: ../../images/booksmart.jpg
+readTime: 7
 ---
 
 [Github](https://github.com/etuong/BookSmart)

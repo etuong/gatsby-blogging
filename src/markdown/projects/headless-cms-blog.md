@@ -5,6 +5,7 @@ description: Strapi is a headless CMS. If the body is the server and the head is
 slug: headless-cms-blog
 date: 2022-06-18T00:00:00+00:00
 featuredImg: ../../images/strapi.jpg
+readTime: 10
 ---
 
 [Github](https://github.com/etuong/headless-cms-blog)

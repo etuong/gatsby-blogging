@@ -5,6 +5,7 @@ stack:
 slug: germany
 date: 2011-10-20T00:00:00+00:00
 featuredImg: ../../images/germany.jpg
+readTime: 8
 ---
 
 The one thing about Europe that is very inconvenient is the loo, aka bathroom or washer closet. Public WC costs 50 Euro cent. Sometimes I go in a WC not to pee, but to drink water (tap water is clean almost everywhere in Europe). Or, I would drink and stay for a while and pee out the water that I drank, you know, to make worth of my money. I’m hella cheap in Europe, but there’s one thing that I am not: There are many homeless people in Munich, and I tried to help as much as I can. I even gave a homeless man outside my hostel my sour candy. Now, I am a sour guy, literally, but the Germans take the flavor to the extreme. Munich was a very fun city, and my most anticipated destination because of the Neuswanstein castle (the real Disney castle, sleeping beauty tower).

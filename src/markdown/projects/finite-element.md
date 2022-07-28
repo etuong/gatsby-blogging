@@ -5,6 +5,7 @@ description: The finite element method is a popular method for numerically solvi
 slug: finite-element
 date: 2021-01-05T00:00:00+00:00
 featuredImg: ../../images/finite-element.jpg
+readTime: 20
 ---
 
 ### § Methods of Weighted Residual to Obtain Governing Weak Form

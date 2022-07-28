@@ -5,6 +5,7 @@ description: Firebase is a platform developed by Google for creating mobile and 
 slug: cards-for-humanity
 date: 2022-07-01T00:00:00+00:00
 featuredImg: ../../images/cards-for-humanity.jpg
+readTime: 9
 ---
 
 [Github](https://github.com/etuong/cards-for-humanity)

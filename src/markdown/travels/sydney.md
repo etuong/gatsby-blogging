@@ -5,6 +5,7 @@ stack:
 slug: sydney
 date: 2010-08-01T00:00:00+00:00
 featuredImg: ../../images/sydney.jpg
+readTime: 8
 ---
 
 Henry Miller once said that "one’s destination is never a place, but a new way of seeing things." I agree with this in the sense that traveling and being exposed to other cultures opens your eyes to a whole new dimension. There is so much that the world has to offer and it's really up to us to make the most of it. I was lucky enough to participate in the international research internship program called PRIME this summer in New Zealand. Upon receiving notification of my acceptance, I knew that I wanted to travel as much as I could after the program. Giving my budget at the time, I was only able to choose four or five countries and I chose Australia, Singapore, Hong Kong and Vietnam. In this entry, I want to share with you some interesting facts and observations from my journey.

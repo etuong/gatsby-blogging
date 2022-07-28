@@ -5,6 +5,7 @@ stack:
 slug: hongkong
 date: 2017-09-01T00:00:00+00:00
 featuredImg: ../../images/hongkong.jpg
+readTime: 7
 ---
 
 I was very lucky to have a friend (Aubree) in the country to help me out. I found communication in Hong Kong to be very difficult for me as I only speak a little Cantonese. Thankfully, I had my friend to show me around. She took me to dim sum, where I learned that you have to wash your utensils and cups with the tea provided. My hostel was in Tsim Sha Tsui along Nathan Road, a really long street popular for shopping and food. It rained a lot on my first three days and there was a typhoon warning, but overall the weather was really nice. My stay at the Chungking hostel was an experience because I totally got hustled by a bunch of Indians! Aubree picked me up at the airport and as soon as we got off the bus (a popular bus route known to carry tourists), a swamp of Indians started to grab us in all the wrong places and tried to lure us to their hostels. I have to admit, though, they make good sales people. I'd totally buy it if they weren't too aggresive. I felt sorry for Aubree, who had to endure the harrassment for a 100 meter walk. Aside from that, my room was infested with cockroaches and toilet paper on the ceiling! To be honest, I actually didn't mind, it isn't everyday I get to sleep with these insects. That said, I sort of embrace it and gave a few nicknames (that says a lot about my friendly nature, right?)

@@ -5,6 +5,7 @@ description: Firebase is a platform developed by Google for creating mobile and 
 slug: ask-ethan
 date: 2021-01-18T00:00:00+00:00
 featuredImg: ../../images/ask-ethan.jpg
+readTime: 6
 ---
 
 [Github](https://github.com/etuong/ask-ethan)

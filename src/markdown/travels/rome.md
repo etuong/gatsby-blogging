@@ -5,6 +5,7 @@ stack:
 slug: rome
 date: 2008-07-01T00:00:00+00:00
 featuredImg: ../../images/rome.jpg
+readTime: 6
 ---
 
 When I was a freshman in college, I had an opportunity to study abroad in Rome, Italy. Spending five weeks in Rome that summer was one of the smartest things I ever did in my young life. I met 15 exceptional and friendly students who all had the urge to learn with a keen sense of curiosity. The overall program was indeed quite expensive , however, the experience and education I got out of it was priceless. I especially enjoyed my stay in Rome because of my wonderful classmates, I daresay they had a profound impact in my life. Aside from the all the fun excursions, I also obtained a great knowledge of structural and architectural concepts and analysis. The program was very lucky to have Professor Pasquale from UCSD lead it. He really knew his stuff and cared for his students’ education.

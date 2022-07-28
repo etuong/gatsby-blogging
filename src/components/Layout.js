@@ -36,7 +36,7 @@ export default function Layout({ children, fullHeight, title }) {
       <Navbar />
       <main>{children}</main>
       <footer className="footer">
-        <p className="pull-right">{copyright}</p>
+        <p>{copyright}</p>
       </footer>
     </div>
   );
